@@ -53,6 +53,7 @@ kernel: amdgpu 0000:01:00.0: [drm] fb0: amdgpudrmfb frame buffer device
 ```
 
 *full boot logs added to the repo*
+*info also shared in issue raised at amd/drm: [*ERROR* UVD not responding, trying to reset the VCPU!!!](https://gitlab.freedesktop.org/drm/amd/-/issues/1125)*
 
 ---
 
@@ -60,6 +61,15 @@ Setup:
 ```
 - Kernel: 6.9.1-arch1-1
 - Kernel params: swap.enabled=0 rw rootfstype=ext4
+
+- GPU: Sapphire RX 570 8 GB (Nitro+)
+    GPU Device Id: 0x1002 0x67DF
+    113-2E366DU-S4U
+    E366 Polaris20 XL A1 GDDR5 256Mx32 8GB
+    (C) 1988-2010, Advanced Micro Devices, Inc.
+    ATOMBIOSBK-AMD VER015.050.002.001.000000
+  BIOS: 366L06HU.S4U
+
 - Asus Z97-AR (Motherboard) BIOS Ver. 3503
 - intel i5-4690 @ 3.50GHz
 - Mismatched Ram (Corsair 4GB 1333MHz x2 + Kingston 4GB 1600MHz x2)
