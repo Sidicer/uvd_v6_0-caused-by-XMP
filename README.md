@@ -59,6 +59,7 @@ kernel: amdgpu 0000:01:00.0: [drm] fb0: amdgpudrmfb frame buffer device
 Setup:
 ```
 - Kernel: 6.9.1-arch1-1
+- Kernel params: swap.enabled=0 rw rootfstype=ext4
 - Asus Z97-AR (Motherboard) BIOS Ver. 3503
 - intel i5-4690 @ 3.50GHz
 - Mismatched Ram (Corsair 4GB 1333MHz x2 + Kingston 4GB 1600MHz x2)
