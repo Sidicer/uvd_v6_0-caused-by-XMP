@@ -52,7 +52,7 @@ kernel: Console: switching to colour frame buffer device 215x45
 kernel: amdgpu 0000:01:00.0: [drm] fb0: amdgpudrmfb frame buffer device
 ```
 
-*full boot logs added to the repo*
+*full boot logs added to the repo*  
 *info also shared in issue raised at amd/drm: [*ERROR* UVD not responding, trying to reset the VCPU!!!](https://gitlab.freedesktop.org/drm/amd/-/issues/1125)*
 
 ---
