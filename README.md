@@ -1,7 +1,5 @@
-# uvd_v6_0 is caused by XMP
-> `[drm:uvd_v6_0_start [amdgpu]] *ERROR* UVD not responding, trying to reset the VCPU!!!` is caused by X.M.P
-
-<sub>not 100% as it can also be caused by `Legacy` (BIOS) boot option, but that was discussed plenty in other threads</sub>
+# uvd_v6_0 can be caused by XMP
+> `[drm:uvd_v6_0_start [amdgpu]] *ERROR* UVD not responding, trying to reset the VCPU!!!` can be caused by an X.M.P profile.
 
 ---
 
@@ -52,8 +50,10 @@ kernel: Console: switching to colour frame buffer device 215x45
 kernel: amdgpu 0000:01:00.0: [drm] fb0: amdgpudrmfb frame buffer device
 ```
 
-*full boot logs added to the repo*  
-*info also shared in issue raised at amd/drm: [*ERROR* UVD not responding, trying to reset the VCPU!!!](https://gitlab.freedesktop.org/drm/amd/-/issues/1125)*
+Attached are two `journalctl -b -t kernel` dumps: (XMP Enabled)[kernel-amdgpu-failure.log] & (XMP Disabled)[kernel-amdgpu-success.log]
+The findings have been also shared here:  
+- [*ERROR* UVD not responding, trying to reset the VCPU!!!](https://gitlab.freedesktop.org/drm/amd/-/issues/1125)
+- [amdgpu driver not being loaded](https://gitlab.freedesktop.org/drm/amd/-/issues/3289)
 
 ---
 
@@ -73,6 +73,6 @@ Setup:
 - Asus Z97-AR (Motherboard) BIOS Ver. 3503
 - intel i5-4690 @ 3.50GHz
 - Mismatched Ram (Corsair 4GB 1333MHz x2 + Kingston 4GB 1600MHz x2)
-- XMP timing: ddr3-1600 9-9-9-24-2N-1.50V
-- UEFI Only boot
+- XMP Profile: DDR3-1600 9-9-9-24-2N-1.50V
+- UEFI Only boot (legacy bios boot disabled)
 ```
